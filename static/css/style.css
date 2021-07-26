@@ -9,8 +9,7 @@ header{
     margin-top: 25px;
     font-size: 65px;
     text-align: center;
-    
-    
+
 }
 
 h1{
@@ -20,5 +19,30 @@ h1{
 }
 
 h2{
+    font-size: 25px;
     text-align: center;
+} 
+
+#NY {
+    height: 100px;
+    width: 100px;
+    margin: 30px;
+    padding-left: 400px;
+    align-items: center;
+    
+}
+
+#LA {
+    height: 100px;
+    width: 100px;
+    margin: 30px;
+    align-items: center;
+    
+}
+
+#HU {
+    height: 100px;
+    width: 100px;
+    margin: 30px;
+    align-items: center;
 }
