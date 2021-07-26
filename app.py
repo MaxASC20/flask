@@ -111,10 +111,18 @@ elif d_insurance == ("no"):
 
 wants = input('How much do you want to spend on other stuff(ex. clothes, entertainment, etc).')
 print("cool")
+months = float(input('Enter the number of months'))
+var1 = float(year / months)
+print(f'Your monthly income is {var1} dollars')
 
+
+x = input('Enter the place you want to live between NY, LA, or Houston:')
+print(f'The average cost of a one bedroom apartment is {money[x]} dollars.')
 
 # -- Routes section --
 @app.route('/')
 @app.route('/index')
 def index():
+
     return "is this working?"
+
