@@ -1,14 +1,241 @@
 <html>
-    <head>
-        <title>Welcome!</title>
-        <link rel="stylesheet" href="../static/css/style.css">
-    </head>
-    <body>
-        <h1>Hello world!</h1>
-        <p>We can build a full webpage here</p>
-        <form>
-            <input type="text" name="nickname" placeholder="Enter your nickname"/>
-            <input type="submit" value="Submit"/>
-        </form>
-    </body>
+
+<head>
+    <title>Welcome!</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+
+<body>
+    <!-- <form method="post" action="/budget">
+        <!-- <label for="yearly_income">What's your yearly income?</label>
+        <input type='text' name='yearly_income'>
+
+        <label for="saving">Enter how much of your montly income you want to save</label>
+        <input type='text' name='saving'>
+
+        <label for="s_loans">Do you have student loans?</label>
+        <input type='text' name='s_loans'> -->
+    
+<form> 
+  <input type="checkbox" id="insurance1" name="health_insurance" value= 400$>
+  <label for="insurance1"> I want Health Insurance </label><br>
+</form> 
+  
+<form> 
+    <input type="checkbox" id="insurance2" name="dental_insurance" value= $30>
+    <label for="insurance2"> I want Dental Insuracne </label><br>
+</form> 
+<form> 
+    <input type="checkbox" id="insurance3" name="vision_insurance" value= $30>
+    <label for="insurance2"> I want Vison Insuracne </label><br>
+</form> 
+<form> 
+    <input type="checkbox" id="insurance4" name="renters_insurance" value= $30>
+    <label for="insurance2"> I want Renter's Insuracne </label><br>
+</form> 
+<form> 
+    <input type="checkbox" id="insurance5" name="dental_insurance" value= $30>
+    <label for="insurance2"> I want Dental Insuracne </label><br>
+</form> 
+<form> 
+    <input type="checkbox" id="cable1" name="cable" value= $30>
+    <label for="insurance2"> I want Cable </label><br>
+</form> 
+<form> 
+    <input type="checkbox" id="internet1" name="internet" value= $30>
+    <label for="insurance2"> I want Internet </label><br>
+</form> 
+<form> 
+    <input type="checkbox" id="gym" name="gym_membership" value= $30>
+    <label for="insurance2"> I want a gym membership </label><br>
+</form> 
+        <input type='submit'>
+</form>
+   <body>
+         <p class="border" id=divBorder3>
+         </p>
+         <div id=monthlySpending class="section">
+            <label for="place_tolive">Enter the place you want to live between NY, LA, or Houston:</label>
+            <input type='text' name='place_tolive'>
+            <p>
+               Please enter the maximum you expect to spend per month on each of the following categories.
+            </p>
+            <table>
+                         <div id=monthlyIncome class="section">
+            <p>
+               Please enter your total expected monthly income.
+            </p>
+            <p>
+               $ <input id="inputIncome" type="text">
+            </p>
+         </div>
+               <tr>
+                  <td>
+                     Rent:
+                  </td>
+                  <td>
+                     $ <input id="inputRent" type="text">
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     Electric:
+                  </td>
+                  <td>
+                     $ <input id="inputElectric" type="text">
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     Car Payment:
+                  </td>
+                  <td>
+                     $ <input id="inputCarPmt" type="text">
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     Car Insurance:
+                  </td>
+                  <td>
+                     $ <input id="inputCarInsur" type="text">
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     Car Repair:
+                  </td>
+                  <td>
+                     $ <input id="inputCarRepair" type="text">
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     Health Insurance:
+                  </td>
+                  <td>
+                     $ <input id="inputHealthInsur" type="text">
+                  </td>
+               </tr>
+                <tr>
+                  <td>
+                     Dental Insurance:
+                  </td>
+                  <td>
+                     $ <input id="inputDentalInsur" type="text">
+                  </td>
+               </tr>
+                <tr>
+                  <td>
+                     Vison Insurance:
+                  </td>
+                  <td>
+                     $ <input id="inputVisionInsur" type="text">
+                  </td>
+               </tr>
+                <tr>
+                  <td>
+                     Renters Insurance:
+                  </td>
+                  <td>
+                     $ <input id="inputRentersInsur" type="text">
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     Gasoline:
+                  </td>
+                  <td>
+                     $ <input id="inputGas" type="text">
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     Groceries:
+                  </td>
+                  <td>
+                     $ <input id="inputGrocery" type="text">
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     Cable:
+                  </td>
+                  <td>
+                     $ <input id="inputCable" type="text">
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     Internet:
+                  </td>
+                  <td>
+                     $ <input id="inputInternet" type="text">
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     Phone:
+                  </td>
+                  <td>
+                     $ <input id="inputPhone" type="text">
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     Education:
+                  </td>
+                  <td>
+                     $ <input id="inputEducation" type="text">
+                  </td>
+               </tr>
+                  <td>
+                     Entertainment:
+                  </td>
+                  <td>
+                     $ <input id="inputEntertain" type="text">
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     Restaurants:
+                  </td>
+                  <td>
+                     $ <input id="inputRestaurant" type="text">
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     Other Expenses:
+                  </td>
+                  <td>
+                     $ <input id="inputMisc" type="text">
+                  </td>
+               </tr>
+            </table>
+         </div>
+
+         <button id=recalculateButton>
+         Recalculate </button>
+         <button id=startOverButton>
+         Start Over </button>
+         <!--Hide All Sections except Section 1-->
+         <script>
+            $("#startOverButton").hide();
+            $("#recalculateButton").hide();
+            $("#divBorder1").hide();
+            $("#divBorder2").hide();
+            $("#divBorder3").hide();
+            $("#divBorder4").hide();
+            $("#divBorder5").hide();
+            $(':input').not(':button, :submit, :reset').removeAttr('checked').removeAttr('selected').not(':checkbox, :radio, select').val('');
+         </script>
+      </div>
+      <!--Warn User-->
+      <div id="dialog" title="Start Over">
+         <p>
+            All progress will be lost. Are you sure you want to start over?
+         </p>
+      </div>
+   </body>
 </html>
