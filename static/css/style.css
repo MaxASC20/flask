@@ -1,4 +1,4 @@
-
+ 
 body{
     background-image: linear-gradient(to right, rgb(86, 49, 250), rgb(123, 145, 237));
     color: whitesmoke;
@@ -27,7 +27,7 @@ h2{
     height: 100px;
     width: 100px;
     margin: 30px;
-    padding-left: 400px;
+    padding-left: 375px;
     align-items: center;
     
 }
