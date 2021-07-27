@@ -5,6 +5,17 @@ from flask import render_template
 from flask import request
 # # # -- Initialization section --
 app = Flask(__name__)
+
+@app.route('/', methods=['GET', 'POST'])
+#@app.route('/budget')
+def index():
+    if request.method == 'POST':
+        print(request.form.getlist('mycheckbox'))
+        return 'Done'
+    return  render_template("index.html")
+
+
+
 # # money = {
 # #   "NY": 2650,
 # #   "LA": 1995,
@@ -227,7 +238,4 @@ app = Flask(__name__)
 # print(f'The average cost of a one bedroom apartment is {money[x]} dollars.')
 
 # # -- Routes section --
-@app.route('/')
-@app.route('/budget')
-def index():
-     return "is this work"
+
