@@ -1,0 +1,48 @@
+
+body{
+    background-image: linear-gradient(to right, rgb(86, 49, 250), rgb(123, 145, 237));
+    color: whitesmoke;
+}
+
+header{
+    font-family:'titillum web', sans-serif ;
+    margin-top: 25px;
+    font-size: 65px;
+    text-align: center;
+
+}
+
+h1{
+    font-family: sans-serif;
+    font-size: 35px;
+    text-align: center;
+}
+
+h2{
+    font-size: 25px;
+    text-align: center;
+} 
+
+#NY {
+    height: 100px;
+    width: 100px;
+    margin: 30px;
+    padding-left: 400px;
+    align-items: center;
+    
+}
+
+#LA {
+    height: 100px;
+    width: 100px;
+    margin: 30px;
+    align-items: center;
+    
+}
+
+#HU {
+    height: 100px;
+    width: 100px;
+    margin: 30px;
+    align-items: center;
+}
