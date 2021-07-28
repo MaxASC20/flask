@@ -1,265 +1,103 @@
-
+<!DOCTYPE html>
 <html>
+    <body>
+        <label>Questions</label><br/>
+        <input type="checkbox" id="checkbox1" name="cable" value="$100"> I want Cable <br/>
+        <input type="checkbox" id="checkbox2" name="health" value="$150"> I want Health Insurance   <br/>
+ 
+        <input type="checkbox" id="checkbox3" name="vision" value="$120"> I want Vision Insurance <br/>
+        <input type="checkbox" id="checkbox4" name="dental" value="$111"> I want Dental Insurance <br/>
+        <input type="checkbox" id="checkbox5" name="renters" value="$30"> I want Renters Insurance <br/>
+        <input type="checkbox" id="checkbox6" name="internet" value="$100"> I want Internet <br/>
+        <input type="checkbox" id="checkbox7" name="gym" value="$53"> I want a gym membership <br/>
+        <input type="checkbox" id="checkbox8" name="thrifty" value="$200"> I plan on being thrifty when buying groceries <br/>
+        <input type="checkbox" id="checkbox9" name="moderate" value="$243"> I plan on being moderate when buying groceries <br/>
+        <input type="checkbox" id="checkbox10" name="liberal" value="$321"> I plan on being liberal when buying groceries <br/>
+        <input type="checkbox" id="checkbox11" name="once" value="$60"> I plan to dine out once a week (Assuming each meal is 15$)<br/>
+        <input type="checkbox" id="checkbox12" name="twice" value="$120"> I plan to dine out twice a week (Assuming each meal is 15$) <br/>
+        <input type="checkbox" id="checkbox13" name="thrice" value="$180"> I plan to dine out thrice a week (Assuming each meal is 15$) <br/>
+        <input type="checkbox" id="checkbox14" name="five" value="$300"> I plan to dine out five times a week (Assuming each meal is 15$) <br/>
+        <input type="checkbox" id="checkbox15" name="dataplan" value="$30"> I want a 2GB data plan <br/>
+        <input type="checkbox" id="checkbox16" name="unlimiteddataplan" value="$30"> I want an unlimited data plan <br/>
 
-<head>
-    <title>Welcome!</title>
-    <link rel="stylesheet" href="../static/css/style.css">
-    <!-- bootstrap -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">  -->
-
-</head> 
-
-<body>
-    <div class="container">
-        <div class="text">
-            <div>
-                <header>Budget Living</header>
-            </div>
-
-            <h1>Find out if you can afford to live here!</h1>
-            <div>
-               
-                
-            </div>
-            <h2>
-                <form>
-                    <input type="text" name="nickname" placeholder="Enter your nickname" />
-                    <input type="submit" value="Submit" />
-                </form>
-            </h2>
-            <img id="NY" src="NYCimage.jpg">
-            <img id="LA" src="LAimage.jpg">
-            <img id="HU" src="houstonimage.jpg">
-        </div>
+        <button onclick="getValue()">Get Value</button>
+        <p id="p1"></p>
+        <script>
+            function getValue() {
+             var ele=[]
+              var cable = document.getElementById("checkbox1")
+              if(cable.checked){
+                    ele.push(cable.value);
+             }
+             var health = document.getElementById("checkbox2")
+              if(health.checked){
+                    ele.push(health.value);
+             }
+             var vision = document.getElementById("checkbox3")
+              if(vision.checked){
+                    ele.push(vision.value);
+             }
+             var dental= document.getElementById("checkbox4")
+              if(dental.checked){
+                    ele.push(dental.value);
+             }
+             var ren = document.getElementById("checkbox5")
+              if(ren.checked){
+                    ele.push(ren.value);
+             }
+             var int = document.getElementById("checkbox6")
+              if(int.checked){
+                    ele.push(int.value);
+             }
+             var gym = document.getElementById("checkbox7")
+              if(gym.checked){
+                    ele.push(gym.value);
+             }
+             var thr = document.getElementById("checkbox8")
+              if(thr.checked){
+                    ele.push(thr.value);
+             }
+             var mod = document.getElementById("checkbox9")
+              if(mod.checked){
+                    ele.push(mod.value);
+             }
+             var lib = document.getElementById("checkbox10")
+              if(lib.checked){
+                    ele.push(lib.value);
+             }
+             var one = document.getElementById("checkbox11")
+              if(one.checked){
+                    ele.push(one.value);
+             }
+             var twi = document.getElementById("checkbox12")
+              if(twi.checked){
+                    ele.push(twi.value);
+             }
+             var thri = document.getElementById("checkbox13")
+              if(thri.checked){
+                    ele.push(thri.value);
+             }
+             var five = document.getElementById("checkbox14")
+              if(five.checked){
+                    ele.push(five.value);
+             }
+             var data = document.getElementById("checkbox15")
+              if(data.checked){
+                    ele.push(data.value);
+             }
+             var udata = document.getElementById("checkbox16")
+              if(udata.checked){
+                    ele.push(udata.value);
+             }
+               if(ele.length>0){
+                document.getElementById("p1").innerHTML = ele;
+               }
+               else{
+               document.getElementById("p1").innerHTML = "You Dont have any thing";
+               }
+             }
+             
+             
+        </script>
     </body>
 </html>
-
-
-<html>
-<head>
-    <title>Welcome!</title>
-    <link rel="stylesheet" href="../static/css/style.css">
-</head>
-<body>
-    <!-- <form method="post" action="/budget">
-        <!-- <label for="yearly_income">What's your yearly income?</label>
-        <input type='text' name='yearly_income'>
-        <label for="saving">Enter how much of your montly income you want to save</label>
-        <input type='text' name='saving'>
-        <label for="s_loans">Do you have student loans?</label>
-        <input type='text' name='s_loans'> -->
-<form> 
-  <input type="checkbox" id="insurance1" name="health_insurance" value= 400$>
-  <label for="insurance1"> I want Health Insurance </label><br>
-</form> 
-
-<div class="checkbox">
-<label>
-    <input type="checkbox" name="dental_insurance" value="edit"> New entry
-</label>
-<form> 
-    <input type="checkbox" id="insurance2" name="dental_insurance" value= $50>
-    <label for="insurance2"> I want Dental Insuracne </label><br>
-</form> 
-<form> 
-    <input type="checkbox" id="insurance3" name="vision_insurance" value= $30>
-    <label for="insurance3"> I want Vison Insuracne </label><br>
-</form> 
-<form> 
-    <input type="checkbox" id="insurance4" name="renters_insurance" value= $30>
-    <label for="insurance4"> I want Renter's Insuracne </label><br>
-</form> 
-<form> 
-    <input type="checkbox" id="cable1" name="cable" value= $50>
-    <label for="cable"> I want Cable </label><br>
-</form> 
-<form> 
-    <input type="checkbox" id="internet1" name="internet" value= $100>
-    <label for="wi-fi"> I want Internet </label><br>
-</form> 
-<form> 
-    <input type="checkbox" id="gym" name="gym_membership" value= $53>
-    <label for="gyms"> I want a gym membership </label><br>
-</form> 
-<form> 
-    <input type="checkbox" id="groceries1" name="tgroc" value= 240$>
-    <label for="thifty"> I plan on being thrifty when buying groceries </label><br>
-</form> 
-<form> 
-    <input type="checkbox" id="groceries2" name="mgroc" value= 303$>
-    <label for="moderate"> I plan on being moderate when buying groceries </label><br>
-</form> 
-<form> 
-    <input type="checkbox" id="groceries3" name="egroc" value= 373$>
-    <label for="expensive"> I plan on being expensive when buying groceries </label><br>
-</form> 
-<form> 
-    <input type="checkbox" id="dining1" name="dino" value= 60$>
-    <label for="dining"> I plan to dine out once a week (Assuming each meal is 15$) </label><br>
-</form> 
-<form> 
-    <input type="checkbox" id="dining2" name="dint" value= 120$>
-    <label for="dining"> I plan to dine out twice a week (Assuming each meal is 15$) </label><br>
-</form> 
-<form> 
-    <input type="checkbox" id="dining3" name="dinth" value= 200$>
-    <label for="dining"> I plan to dine out thrice a week (Assuming each meal is 15$) </label><br>
-</form> 
-<form> 
-    <input type="checkbox" id="dining4" name="dinf" value= 300$>
-    <label for="dining"> I plan to dine out five times a week (Assuming each meal is 15$) </label><br>
-</form> 
-<form> 
-    <input type="checkbox" id="data_plan" name="data" value= 30$>
-    <label for="dining"> I plan on getting a 2 GB data plan </label><br>
-</form> 
-<form> 
-    <input type="checkbox" id="data_plan2" name="undata" value= 30$>
-    <label for="dining"> I plan on getting an unlimited data plan </label><br>
-</form> 
-    <input type='submit'>
-</form>
-   <body>
-         <p class="border" id=divBorder3>
-         </p>
-        <div id=monthlySpending class="section">
-            <label for="place_tolive">Enter the place you want to live between NY, LA, or Houston:</label>
-            <input type='text' name='place_tolive'>
-            <table>
-        <div id=monthlyIncome class="section">
-            <p>
-               Please enter your total expected monthly income.
-            </p>
-            <p>
-               $ <input id="inputIncome" type="text">
-            </p>
-         </div>
-               <tr>
-                  <td>
-                     Rent:
-                  </td>
-                  <td>
-                     $ <input id="inputRent" type="text">
-                  </td>
-               </tr>
-               <tr>
-                  <td>
-                     Electric&Gas:
-                  </td>
-                  <td>
-                     $ <input id="inputElectric" type="text">
-                  </td>
-               </tr>
-               <tr>
-                  <td>
-                     Health Insurance:
-                  </td>
-                  <td>
-                     $ <input id="inputHealthInsur" type="text">
-                  </td>
-               </tr>
-                <tr>
-                  <td>
-                     Dental Insurance:
-                  </td>
-                  <td>
-                     $ <input id="inputDentalInsur" type="text">
-                  </td>
-               </tr>
-                <tr>
-                  <td>
-                     Vison Insurance:
-                  </td>
-                  <td>
-                     $ <input id="inputVisionInsur" type="text">
-                  </td>
-               </tr>
-                <tr>
-                  <td>
-                     Renters Insurance:
-                  </td>
-                  <td>
-                     $ <input id="inputRentersInsur" type="text">
-                  </td>
-               </tr>
-               <tr>
-                  <td>
-                     Groceries:
-                  </td>
-                  <td>
-                     $ <input id="inputGrocery" type="text">
-                  </td>
-               </tr>
-               <tr>
-                  <td>
-                     Cable:
-                  </td>
-                  <td>
-                     $ <input id="inputCable" type="text">
-                  </td>
-               </tr>
-               <tr>
-                  <td>
-                     Internet:
-                  </td>
-                  <td>
-                     $ <input id="inputInternet" type="text">
-                  </td>
-               </tr>
-               <tr>
-                  <td>
-                     Phone:
-                  </td>
-                  <td>
-                     $ <input id="inputPhone" type="text">
-                  </td>
-                </tr>
-               <tr>
-                  <td>
-                     Restaurants:
-                  </td>
-                  <td>
-                     $ <input id="inputRestaurant" type="text">
-                  </td>
-               </tr>
-            </table>
-        </div>
-         <button id=recalculateButton>
-         Recalculate </button>
-         <button id=startOverButton>
-         Start Over </button>
-         <!--Hide All Sections except Section 1-->
-         <script>
-            $("#startOverButton").hide();
-            $("#recalculateButton").hide();
-            $("#divBorder1").hide();
-            $("#divBorder2").hide();
-            $("#divBorder3").hide();
-            $("#divBorder4").hide();
-            $("#divBorder5").hide();
-            $(':input').not(':button, :submit, :reset').removeAttr('checked').removeAttr('selected').not(':checkbox, :radio, select').val('');
-         </script>
-      </div>
-      <!--Warn User-->
-      <div id="dialog" title="Start Over">
-         <p>
-            All progress will be lost. Are you sure you want to start over?
-         </p>
-      </div>
-   </body>
-</html>
-
-<<<<<<< HEAD
-=======
-
-    </div>
-    
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script> -->
-</body>
-
-</html>
-
->>>>>>> 32f33663a73fb4411e38ffb3c5e25b74d179852a
