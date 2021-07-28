@@ -1,0 +1,223 @@
+<!DOCTYPE html> 
+<html lang="en">
+
+<html>
+    <head>
+        <title>Huston</title>
+        <link rel="stylesheet" href="../static/css/hu.css">
+    </head>
+    <body>
+        <div class="text">
+            <div>
+                <header>Huston, Texas</header>
+            </div>
+​
+            <!-- <form method="post" action="/budget">
+        <label for="yearly_income">What's your yearly income?</label>
+        <input type='text' name='yearly_income'>
+        <label for="saving">Enter how much of your montly income you want to save</label>
+        <input type='text' name='saving'>
+        <label for="s_loans">Do you have student loans?</label>
+        <input type='text' name='s_loans'> -->
+        <form>
+            <input type="checkbox" id="insurance1" name="health_insurance" value=400$>
+            <label for="insurance1"> I want Health Insurance </label><br>
+        </form>
+
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" name="dental_insurance" value="edit"> New entry
+            </label>
+            <form>
+                <input type="checkbox" id="insurance2" name="dental_insurance" value=$50>
+                <label for="insurance2"> I want Dental Insuracne </label><br>
+            </form>
+            <form>
+                <input type="checkbox" id="insurance3" name="vision_insurance" value=$30>
+                <label for="insurance3"> I want Vison Insuracne </label><br>
+            </form>
+            <form>
+                <input type="checkbox" id="insurance4" name="renters_insurance" value=$30>
+                <label for="insurance4"> I want Renter's Insuracne </label><br>
+            </form>
+            <form>
+                <input type="checkbox" id="cable1" name="cable" value=$50>
+                <label for="cable"> I want Cable </label><br>
+            </form>
+            <form>
+                <input type="checkbox" id="internet1" name="internet" value=$100>
+                <label for="wi-fi"> I want Internet </label><br>
+            </form>
+            <form>
+                <input type="checkbox" id="gym" name="gym_membership" value=$53>
+                <label for="gyms"> I want a gym membership </label><br>
+            </form>
+            <form>
+                <input type="checkbox" id="groceries1" name="tgroc" value=240$>
+                <label for="thifty"> I plan on being thrifty when buying groceries </label><br>
+            </form>
+            <form>
+                <input type="checkbox" id="groceries2" name="mgroc" value=303$>
+                <label for="moderate"> I plan on being moderate when buying groceries </label><br>
+            </form>
+            <form>
+                <input type="checkbox" id="groceries3" name="egroc" value=373$>
+                <label for="expensive"> I plan on being expensive when buying groceries </label><br>
+            </form>
+            <form>
+                <input type="checkbox" id="dining1" name="dino" value=60$>
+                <label for="dining"> I plan to dine out once a week (Assuming each meal is 15$) </label><br>
+            </form>
+            <form>
+                <input type="checkbox" id="dining2" name="dint" value=120$>
+                <label for="dining"> I plan to dine out twice a week (Assuming each meal is 15$) </label><br>
+            </form>
+            <form>
+                <input type="checkbox" id="dining3" name="dinth" value=200$>
+                <label for="dining"> I plan to dine out thrice a week (Assuming each meal is 15$) </label><br>
+            </form>
+            <form>
+                <input type="checkbox" id="dining4" name="dinf" value=300$>
+                <label for="dining"> I plan to dine out five times a week (Assuming each meal is 15$) </label><br>
+            </form>
+            <form>
+                <input type="checkbox" id="data_plan" name="data" value=30$>
+                <label for="dining"> I plan on getting a 2 GB data plan </label><br>
+            </form>
+            <form>
+                <input type="checkbox" id="data_plan2" name="undata" value=30$>
+                <label for="dining"> I plan on getting an unlimited data plan </label><br>
+            </form>
+            <input type='submit'>
+            </form>
+
+            <body>
+                <p class="border" id=divBorder3>
+                </p>
+                <div id=monthlySpending class="section">
+                    <label for="place_tolive">Enter the place you want to live between NY, LA, or Houston:</label>
+                    <input type='text' name='place_tolive'>
+                    <table>
+                        <div id=monthlyIncome class="section">
+                            <p>
+                                Please enter your total expected monthly income.
+                            </p>
+                            <p>
+                                $ <input id="inputIncome" type="text">
+                            </p>
+                        </div>
+                        <tr>
+                            <td>
+                                Rent:
+                            </td>
+                            <td>
+                                $ <input id="inputRent" type="text">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Electric&Gas:
+                            </td>
+                            <td>
+                                $ <input id="inputElectric" type="text">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Health Insurance:
+                            </td>
+                            <td>
+                                $ <input id="inputHealthInsur" type="text">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Dental Insurance:
+                            </td>
+                            <td>
+                                $ <input id="inputDentalInsur" type="text">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Vison Insurance:
+                            </td>
+                            <td>
+                                $ <input id="inputVisionInsur" type="text">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Renters Insurance:
+                            </td>
+                            <td>
+                                $ <input id="inputRentersInsur" type="text">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Groceries:
+                            </td>
+                            <td>
+                                $ <input id="inputGrocery" type="text">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Cable:
+                            </td>
+                            <td>
+                                $ <input id="inputCable" type="text">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Internet:
+                            </td>
+                            <td>
+                                $ <input id="inputInternet" type="text">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Phone:
+                            </td>
+                            <td>
+                                $ <input id="inputPhone" type="text">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Restaurants:
+                            </td>
+                            <td>
+                                $ <input id="inputRestaurant" type="text">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <button id=recalculateButton>
+                    Recalculate </button>
+                <button id=startOverButton>
+                    Start Over </button>
+                <!--Hide All Sections except Section 1-->
+                <script>
+                    $("#startOverButton").hide();
+                    $("#recalculateButton").hide();
+                    $("#divBorder1").hide();
+                    $("#divBorder2").hide();
+                    $("#divBorder3").hide();
+                    $("#divBorder4").hide();
+                    $("#divBorder5").hide();
+                    $(':input').not(':button, :submit, :reset').removeAttr('checked').removeAttr('selected').not(':checkbox, :radio, select').val('');
+                </script>
+        </div>
+        <!--Warn User-->
+        <div id="dialog" title="Start Over">
+            <p>
+                All progress will be lost. Are you sure you want to start over?
+            </p>
+        </div>
+        </body>
+
+</html>

@@ -24,25 +24,25 @@ h2{
 } 
 
 #NY {
-    height: 100px;
-    width: 100px;
-    margin: 30px;
-    padding-left: 375px;
+    height: 250px;
+    width: 250px;
+    margin: 50px;
+    padding-left: 200px;
     align-items: center;
     
 }
 
 #LA {
-    height: 100px;
-    width: 100px;
-    margin: 30px;
+    height: 250px;
+    width: 250px;
+    margin: 50px;
     align-items: center;
     
 }
 
 #HU {
-    height: 100px;
-    width: 100px;
-    margin: 30px;
+    height: 250px;
+    width: 250px;
+    margin: 50px;
     align-items: center;
 }

@@ -15,6 +15,18 @@ def index():
     return  render_template("index.html")
 
 
+@app.route('/Huston', methods=['GET', 'POST'] )
+def huston():
+    return render_template("hu.html")
+
+@app.route('/NYC', methods=['GET', 'POST'] )
+def NYC():
+    return render_template("ny.html")
+
+@app.route('/LA', methods=['GET', 'POST'] )
+def LA():
+    return render_template("la.html")
+
 
 # # money = {
 # #   "NY": 2650,
