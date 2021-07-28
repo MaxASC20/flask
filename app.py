@@ -3,17 +3,22 @@
 from flask import Flask
 from flask import render_template
 from flask import request
+from flask import redirect
+
 # # # -- Initialization section --
 app = Flask(__name__)
 
-@app.route('/', methods=['GET', 'POST'])
-#@app.route('/budget')
+@app.route('/')
 def index():
-    if request.method == 'POST':
-        print(request.form.getlist('mycheckbox'))
-        return 'Done'
-    return  render_template("index.html")
+    return render_template('index.html')
 
+# @app.route('/', methods=['GET', 'POST'])
+# #@app.route('/budget')
+# def budget():
+#     if request.method == 'POST':
+#         budget= request.form.get('checkbox')
+#         print(budget)
+#         return redirect('/')
 
 
 # # money = {
