@@ -1,12 +1,11 @@
-
-
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 
 
 <html>
-    <body>
-        <!-- <label>Questions</label><br/>
+
+<body>
+    <!-- <label>Questions</label><br/>
         <input type="checkbox" id="checkbox1" name="cable" value="$100"> I want Cable <br/>
         <input type="checkbox" id="checkbox2" name="health" value="$150"> I want Health Insurance   <br/>
  
@@ -107,60 +106,80 @@
     </body>
 </html> -->
 
-<head>
-    <title>Welcome!</title>
-    <link rel="stylesheet" href="../static/css/style.css">
-    <!-- bootstrap -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    <head>
+        <title>Welcome!</title>
+        <link rel="stylesheet" href="../static/css/style.css">
+        <!-- bootstrap -->
+        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">  -->
 
-</head> 
+    </head>
 
-<body>
-    <div class="container">
-        <div class="text">
-            <div>
-                <header>Budget Living</header>
-            </div>
+    <body>
+        <div class="container">
+            <div class="text">
+                <div>
+                    <header>Budget Living</header>
+                </div>
 
-            <h1>Find out if you can afford to live here!</h1>
-            <div>
-               
-                
-            </div>
-            <h2>
-                <!-- <form>
-                    <input type="text" name="nickname" placeholder="Enter your nickname" />
-                    <input type="submit" value="Submit" />
-                </form> -->
-            </h2>
-            
+                <h1>Find out if you can afford to live here!</h1>
+                <br>
+                <br>
+                <div>
 
-            
-        
-            <div>
-                <a href="/NYC" target="_blank"><img id="NY" src="static/images/NYCimage.jpg"> </a>
-                <a href="/LA" target="_blank"><img   id="LA" src="static/images/LAimage.jpg">  </a>
-                <a href="/Huston" target="_blank"><img id="HU" src="static/images/houstonimage.jpg">  </a>
-            </div>
 
-            <!-- <img id="NY" src="static/images/NYCimage.jpg"> 
+                </div>
+<!-- 
+
+                <div>
+                    <span> lorem ipsum <a href="/NYC" target="_blank"><img id="NY" src="static/images/NYCimage.jpg">
+                        </a> </span>
+                    <span> lorem <a href="/LA" target="_blank"><img id="LA" src="static/images/LAimage.jpg"> </a></span>
+                    <span> <a href="/Huston" target="_blank"><img id="HU" src="static/images/houstonimage.jpg">
+                        </a></span>
+                </div> -->
+
+                <table>
+                    <tr>
+                        <td class="left-padding"> New York City </td>
+                        <td class="middle-padding"> Los Angeles </td>
+                        <td class="right-padding"> Houston </td>
+                    </tr>
+                    <tr>
+                        <td><a href="/NYC" target="_blank"><img id="NY" src="static/images/NYCimage.jpg"></a></td>
+                        <td><a href="/LA" target="_blank"><img id="LA" src="static/images/LAimage.jpg"> </a></td>
+                        <td><a href="/Huston" target="_blank"><img id="HU" src="static/images/houstonimage.jpg"></a></td>
+                    </tr>
+                    <tr>
+                        <td class="Bottom-NYC"> "The City That Never Sleeps" <br> Popolation: 8,336,817  </td>
+                        <td class="Bottom-LA">   "The City of Angeles" <br> Population: 3,979,576        </td>
+                        <td class="Bottom-HU"> "H-Town" <br> Population: 2,320,268                      </td> 
+                    </tr>  
+                </table>
+
+
+
+
+                <!-- <img id="NY" src="static/images/NYCimage.jpg"> 
             <img id="LA" src="static/images/LAimage.jpg">
-            <img id="HU" src="static/images/houstonimage.jpg"> 
+            <img id="HU" src="static/images/houstonimage.jpg"> -->
+                <br>
+                <br>
+                <br>
 
- -->
-
-
-        </div>
+            </div>
     </body>
+
 </html>
 
 
 <html>
+
 <head>
     <title>Welcome!</title>
     <link rel="stylesheet" href="../static/css/style.css">
 </head>
+
 <body>
     <!-- <form method="post" action="/budget">
         <label for="yearly_income">What's your yearly income?</label>
@@ -169,7 +188,7 @@
         <input type='text' name='saving'>
         <label for="s_loans">Do you have student loans?</label>
         <input type='text' name='s_loans'> -->
-<!-- <form> 
+    <!-- <form> 
   <input type="checkbox" id="insurance1" name="health_insurance" value= 400$>
   <label for="insurance1"> I want Health Insurance </label><br>
 </form> 
@@ -194,7 +213,7 @@
     <input type="checkbox" id="cable1" name="cable" value= $50>
     <label for="cable"> I want Cable </label><br>
 </form>  -->
-<!-- <form> 
+    <!-- <form> 
     <input type="checkbox" id="internet1" name="internet" value= $100>
     <label for="wi-fi"> I want Internet </label><br>
 </form> 
@@ -300,7 +319,7 @@
                      Renters Insurance:
                   </td>
                   <td> -->
-                     <!-- $ <input id="inputRentersInsur" type="text">
+    <!-- $ <input id="inputRentersInsur" type="text">
                   </td>
                </tr>
                <tr>
@@ -335,7 +354,7 @@
                      $ <input id="inputPhone" type="text">
                   </td>
                 </tr> -->
-               <!-- <tr>
+    <!-- <tr>
                   <td>
                      Restaurants:
                   </td>
@@ -349,8 +368,8 @@
          Recalculate </button>
          <button id=startOverButton>
          Start Over </button> -->
-         <!--Hide All Sections except Section 1-->
-         <!-- <script>
+    <!--Hide All Sections except Section 1-->
+    <!-- <script>
             $("#startOverButton").hide();
             $("#recalculateButton").hide();
             $("#divBorder1").hide();
@@ -361,22 +380,20 @@
             $(':input').not(':button, :submit, :reset').removeAttr('checked').removeAttr('selected').not(':checkbox, :radio, select').val('');
          </script>
       </div> -->
-      <!--Warn User-->
-      <!-- <div id="dialog" title="Start Over">
+    <!--Warn User-->
+    <!-- <div id="dialog" title="Start Over">
          <p> -->
-            <!-- All progress will be lost. Are you sure you want to start over?
+    <!-- All progress will be lost. Are you sure you want to start over?
          </p>
       </div>
    </body>
 </html>
 
     </div> -->
-    
+
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script> -->
 </body>
 
 </html>
-
-
