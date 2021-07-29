@@ -11,6 +11,16 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     return render_template('index.html')
+    
+# @app.route('/')
+# def post(self):
+#     adjectives = self.request.get('adjective', allow_multiple=True)
+#         # increment count
+#         self.adjective_count[a] += 1 # or whatever
+
+        # do more stuff with adjective a, if you want
+
+    # do other stuff with the request
 
 # @app.route('/', methods=['GET', 'POST'])
 # #@app.route('/budget')

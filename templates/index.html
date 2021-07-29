@@ -1,29 +1,32 @@
-
-
 <!DOCTYPE html> 
 <html lang="en">
 
 
 <html>
     <body>
+
+        <label>Questions</label><br/>
+        <input type="checkbox" id="checkbox1" name="cable" value="100"> I want Cable <br/>
+        <input type="checkbox" id="checkbox2" name="health" value="150"> I want Health Insurance   <br/>
+
         <!-- <label>Questions</label><br/>
         <input type="checkbox" id="checkbox1" name="cable" value="$100"> I want Cable <br/>
         <input type="checkbox" id="checkbox2" name="health" value="$150"> I want Health Insurance   <br/>
- 
-        <input type="checkbox" id="checkbox3" name="vision" value="$120"> I want Vision Insurance <br/>
-        <input type="checkbox" id="checkbox4" name="dental" value="$111"> I want Dental Insurance <br/>
-        <input type="checkbox" id="checkbox5" name="renters" value="$30"> I want Renters Insurance <br/>
-        <input type="checkbox" id="checkbox6" name="internet" value="$100"> I want Internet <br/>
-        <input type="checkbox" id="checkbox7" name="gym" value="$53"> I want a gym membership <br/>
-        <input type="checkbox" id="checkbox8" name="thrifty" value="$200"> I plan on being thrifty when buying groceries <br/>
-        <input type="checkbox" id="checkbox9" name="moderate" value="$243"> I plan on being moderate when buying groceries <br/>
-        <input type="checkbox" id="checkbox10" name="liberal" value="$321"> I plan on being liberal when buying groceries <br/>
-        <input type="checkbox" id="checkbox11" name="once" value="$60"> I plan to dine out once a week (Assuming each meal is 15$)<br/>
-        <input type="checkbox" id="checkbox12" name="twice" value="$120"> I plan to dine out twice a week (Assuming each meal is 15$) <br/>
-        <input type="checkbox" id="checkbox13" name="thrice" value="$180"> I plan to dine out thrice a week (Assuming each meal is 15$) <br/>
-        <input type="checkbox" id="checkbox14" name="five" value="$300"> I plan to dine out five times a week (Assuming each meal is 15$) <br/>
-        <input type="checkbox" id="checkbox15" name="dataplan" value="$30"> I want a 2GB data plan <br/>
-        <input type="checkbox" id="checkbox16" name="unlimiteddataplan" value="$30"> I want an unlimited data plan <br/>
+
+        <input type="checkbox" id="checkbox3" name="vision" value="120"> I want Vision Insurance <br/>
+        <input type="checkbox" id="checkbox4" name="dental" value="111"> I want Dental Insurance <br/>
+        <input type="checkbox" id="checkbox5" name="renters" value="30"> I want Renters Insurance <br/>
+        <input type="checkbox" id="checkbox6" name="internet" value="100"> I want Internet <br/>
+        <input type="checkbox" id="checkbox7" name="gym" value="53"> I want a gym membership <br/>
+        <input type="checkbox" id="checkbox8" name="thrifty" value="200"> I plan on being thrifty when buying groceries <br/>
+        <input type="checkbox" id="checkbox9" name="moderate" value="243"> I plan on being moderate when buying groceries <br/>
+        <input type="checkbox" id="checkbox10" name="liberal" value="321"> I plan on being liberal when buying groceries <br/>
+        <input type="checkbox" id="checkbox11" name="once" value="60"> I plan to dine out once a week (Assuming each meal is 15$)<br/>
+        <input type="checkbox" id="checkbox12" name="twice" value="120"> I plan to dine out twice a week (Assuming each meal is 15$) <br/>
+        <input type="checkbox" id="checkbox13" name="thrice" value="180"> I plan to dine out thrice a week (Assuming each meal is 15$) <br/>
+        <input type="checkbox" id="checkbox14" name="five" value="300"> I plan to dine out five times a week (Assuming each meal is 15$) <br/>
+        <input type="checkbox" id="checkbox15" name="dataplan" value="30"> I want a 2GB data plan <br/>
+        <input type="checkbox" id="checkbox16" name="unlimiteddataplan" value="30"> I want an unlimited data plan <br/>
 
         <button onclick="getValue()">Get Value</button>
         <p id="p1"></p>
@@ -95,16 +98,18 @@
                     ele.push(udata.value);
              }
                if(ele.length>0){
-                document.getElementById("p1").innerHTML = ele;
+                   var addedValue = ele.reduce((a, b) => +a + +b);
+                document.getElementById("p1").innerHTML = addedValue;
                }
                else{
                document.getElementById("p1").innerHTML = "You Dont have any thing";
                }
              }
-             
-             
         </script>
     </body>
+
+</html>
+
 </html> -->
 
 <head>
@@ -378,5 +383,6 @@
 </body>
 
 </html>
+
 
 
