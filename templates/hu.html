@@ -14,108 +14,120 @@
             <header>Huston, Texas</header>
         </div>
         ​<body>
-        <h3>
-        <label id="questions"></label>Questions</label><br/>
-        <input type="checkbox" id ="checkbox1" value="1295" style="display:none" checked="checked" />
-        <input type="checkbox" id="checkbox1" name="cable" value="100"> I want Cable <br/>
-        <input type="checkbox" id="checkbox2" name="health" value="150"> I want Health Insurance   <br/>
+         <h3>
+            <label id="questions">Questions</label><br />
+            <input type="checkbox" id ="checkbox1" value="1295" style="display:none" checked="checked" />
 
-        <input type="checkbox" id="checkbox3" name="vision" value="120"> I want Vision Insurance <br/>
-        <input type="checkbox" id="checkbox4" name="dental" value="111"> I want Dental Insurance <br/>
-        <input type="checkbox" id="checkbox5" name="renters" value="30"> I want Renters Insurance <br/>
-        <input type="checkbox" id="checkbox6" name="internet" value="100"> I want Internet <br/>
-        <input type="checkbox" id="checkbox7" name="gym" value="53"> I want a gym membership <br/>
-        <input type="checkbox" id="checkbox8" name="thrifty" value="200"> I plan on being thrifty when buying groceries <br/>
-        <input type="checkbox" id="checkbox9" name="moderate" value="243"> I plan on being moderate when buying groceries <br/>
-        <input type="checkbox" id="checkbox10" name="liberal" value="321"> I plan on being liberal when buying groceries <br/>
-        <input type="checkbox" id="checkbox11" name="once" value="60"> I plan to dine out once a week (Assuming each meal is 15$)<br/>
-        <input type="checkbox" id="checkbox12" name="twice" value="120"> I plan to dine out twice a week (Assuming each meal is 15$) <br/>
-        <input type="checkbox" id="checkbox13" name="thrice" value="180"> I plan to dine out thrice a week (Assuming each meal is 15$) <br/>
-        <input type="checkbox" id="checkbox14" name="five" value="300"> I plan to dine out five times a week (Assuming each meal is 15$) <br/>
-        <input type="checkbox" id="checkbox15" name="dataplan" value="30"> I want a 2GB data plan <br/>
-        <input type="checkbox" id="checkbox16" name="unlimiteddataplan" value="30"> I want an unlimited data plan <br/>
+            <input type="checkbox" id="checkbox2" name="health" value="150"> I want Health Insurance <br />
 
-        <button onclick="getValue()">Total cost</button>
-        <p id="p1"></p>
-        <script>
-            function getValue() {
-             var ele=[]
-              var cable = document.getElementById("checkbox1")
-              if(cable.checked){
-                    ele.push(cable.value);
-             }
-             var health = document.getElementById("checkbox2")
-              if(health.checked){
-                    ele.push(health.value);
-             }
-             var vision = document.getElementById("checkbox3")
-              if(vision.checked){
-                    ele.push(vision.value);
-             }
-             var dental= document.getElementById("checkbox4")
-              if(dental.checked){
-                    ele.push(dental.value);
-             }
-             var ren = document.getElementById("checkbox5")
-              if(ren.checked){
-                    ele.push(ren.value);
-             }
-             var int = document.getElementById("checkbox6")
-              if(int.checked){
-                    ele.push(int.value);
-             }
-             var gym = document.getElementById("checkbox7")
-              if(gym.checked){
-                    ele.push(gym.value);
-             }
-             var thr = document.getElementById("checkbox8")
-              if(thr.checked){
-                    ele.push(thr.value);
-             }
-             var mod = document.getElementById("checkbox9")
-              if(mod.checked){
-                    ele.push(mod.value);
-             }
-             var lib = document.getElementById("checkbox10")
-              if(lib.checked){
-                    ele.push(lib.value);
-             }
-             var one = document.getElementById("checkbox11")
-              if(one.checked){
-                    ele.push(one.value);
-             }
-             var twi = document.getElementById("checkbox12")
-              if(twi.checked){
-                    ele.push(twi.value);
-             }
-             var thri = document.getElementById("checkbox13")
-              if(thri.checked){
-                    ele.push(thri.value);
-             }
-             var five = document.getElementById("checkbox14")
-              if(five.checked){
-                    ele.push(five.value);
-             }
-             var data = document.getElementById("checkbox15")
-              if(data.checked){
-                    ele.push(data.value);
-             }
-             var udata = document.getElementById("checkbox16")
-              if(udata.checked){
-                    ele.push(udata.value);
-             }
-               if(ele.length>0){
-                   var addedValue = ele.reduce((a, b) => +a + +b);
-                document.getElementById("p1").innerHTML = "Your monthly expeses are $ " + addedValue;
-               }
-               else{
-               document.getElementById("p1").innerHTML = "You Dont have any thing";
-               }
-             }
-        </script>
+            <input type="checkbox" id="checkbox3" name="vision" value="150"> I want Vision Insurance <br />
+            <input type="checkbox" id="checkbox4" name="dental" value="100"> I want Dental Insurance <br />
+            <input type="checkbox" id="checkbox5" name="renters" value="50"> I want Renters Insurance <br />
+            <input type="checkbox" id="checkbox17" name="cable" value="50"> I want Cable <br />
+            <input type="checkbox" id="checkbox6" name="internet" value="50"> I want Internet <br />
+            <input type="checkbox" id="checkbox7" name="gym" value="25"> I want a gym membership <br />
+            <input type="checkbox" id="checkbox8" name="thrifty" value="200"> I plan on being thrifty when buying
+            groceries <br />
+            <input type="checkbox" id="checkbox9" name="moderate" value="243"> I plan on being moderate when buying
+            groceries <br />
+            <input type="checkbox" id="checkbox10" name="liberal" value="321"> I plan on being liberal when buying
+            groceries <br />
+            <input type="checkbox" id="checkbox11" name="once" value="60"> I plan to dine out once a week (Assuming each
+            meal is 15$)<br />
+            <input type="checkbox" id="checkbox12" name="twice" value="120"> I plan to dine out twice a week (Assuming
+            each meal is 15$) <br />
+            <input type="checkbox" id="checkbox13" name="thrice" value="180"> I plan to dine out thrice a week (Assuming
+            each meal is 15$) <br />
+            <input type="checkbox" id="checkbox14" name="five" value="300"> I plan to dine out five times a week
+            (Assuming each meal is 15$) <br />
+            <input type="checkbox" id="checkbox15" name="dataplan" value="20"> I want a 2GB data plan <br />
+            <input type="checkbox" id="checkbox16" name="unlimiteddataplan" value="50"> I want an unlimited data plan
+            <br />
 
-
-        </script>
+            <button onclick="getValue()">Total cost</button>
+            <p id="p1"></p>
+            <script>
+                function getValue() {
+                    var ele = []
+                    var hidden = document.getElementById("checkbox1")
+                    if (hidden.checked) {
+                        ele.push(hidden.value);
+                    }
+            
+                    var cable = document.getElementById("checkbox17")
+                    if (cable.checked) {
+                        ele.push(cable.value);
+                    }
+                    var health = document.getElementById("checkbox2")
+                    if (health.checked) {
+                        ele.push(health.value);
+                    }
+                    var vision = document.getElementById("checkbox3")
+                    if (vision.checked) {
+                        ele.push(vision.value);
+                    }
+                    var dental = document.getElementById("checkbox4")
+                    if (dental.checked) {
+                        ele.push(dental.value);
+                    }
+                    var ren = document.getElementById("checkbox5")
+                    if (ren.checked) {
+                        ele.push(ren.value);
+                    }
+                    var int = document.getElementById("checkbox6")
+                    if (int.checked) {
+                        ele.push(int.value);
+                    }
+                    var gym = document.getElementById("checkbox7")
+                    if (gym.checked) {
+                        ele.push(gym.value);
+                    }
+                    var thr = document.getElementById("checkbox8")
+                    if (thr.checked) {
+                        ele.push(thr.value);
+                    }
+                    var mod = document.getElementById("checkbox9")
+                    if (mod.checked) {
+                        ele.push(mod.value);
+                    }
+                    var lib = document.getElementById("checkbox10")
+                    if (lib.checked) {
+                        ele.push(lib.value);
+                    }
+                    var one = document.getElementById("checkbox11")
+                    if (one.checked) {
+                        ele.push(one.value);
+                    }
+                    var twi = document.getElementById("checkbox12")
+                    if (twi.checked) {
+                        ele.push(twi.value);
+                    }
+                    var thri = document.getElementById("checkbox13")
+                    if (thri.checked) {
+                        ele.push(thri.value);
+                    }
+                    var five = document.getElementById("checkbox14")
+                    if (five.checked) {
+                        ele.push(five.value);
+                    }
+                    var data = document.getElementById("checkbox15")
+                    if (data.checked) {
+                        ele.push(data.value);
+                    }
+                    var udata = document.getElementById("checkbox16")
+                    if (udata.checked) {
+                        ele.push(udata.value);
+                    }
+                    if (ele.length > 0) {
+                        var addedValue = ele.reduce((a, b) => +a + +b);
+                        document.getElementById("p1").innerHTML = "Your mothly expenses are $ " + addedValue;
+                    }
+                    else {
+                        document.getElementById("p1").innerHTML = "You Dont have any thing";
+                    }
+                }
+            </script>
+            
         </h3>
 </body>
 
