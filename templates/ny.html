@@ -14,19 +14,18 @@
         <div>
             <header>New York City, NY</header>
         </div>
-            <!-- <img id="Queens" src="static/images/QueensNy.png" style= "float: left; margin-top: 25px; margin-left: 30px;">
-            <img id="Bronx" src="static/images/Bronx.jpg" style= "float: left; margin-top: 500px; margin-left: 30px;"> -->
             <h3>
             <label id="questions">Questions</label><br />
             <input type="checkbox" id ="checkbox1" value="1920" style="display:none" checked="checked" />
-            <input type="checkbox" id="checkbox1" name="cable" value="100"> I want Cable <br />
+
             <input type="checkbox" id="checkbox2" name="health" value="150"> I want Health Insurance <br />
 
-            <input type="checkbox" id="checkbox3" name="vision" value="120"> I want Vision Insurance <br />
-            <input type="checkbox" id="checkbox4" name="dental" value="111"> I want Dental Insurance <br />
-            <input type="checkbox" id="checkbox5" name="renters" value="30"> I want Renters Insurance <br />
-            <input type="checkbox" id="checkbox6" name="internet" value="100"> I want Internet <br />
-            <input type="checkbox" id="checkbox7" name="gym" value="53"> I want a gym membership <br />
+            <input type="checkbox" id="checkbox3" name="vision" value="150"> I want Vision Insurance <br />
+            <input type="checkbox" id="checkbox4" name="dental" value="100"> I want Dental Insurance <br />
+            <input type="checkbox" id="checkbox5" name="renters" value="50"> I want Renters Insurance <br />
+            <input type="checkbox" id="checkbox17" name="cable" value="50"> I want Cable <br />
+            <input type="checkbox" id="checkbox6" name="internet" value="50"> I want Internet <br />
+            <input type="checkbox" id="checkbox7" name="gym" value="25"> I want a gym membership <br />
             <input type="checkbox" id="checkbox8" name="thrifty" value="200"> I plan on being thrifty when buying
             groceries <br />
             <input type="checkbox" id="checkbox9" name="moderate" value="243"> I plan on being moderate when buying
@@ -41,8 +40,8 @@
             each meal is 15$) <br />
             <input type="checkbox" id="checkbox14" name="five" value="300"> I plan to dine out five times a week
             (Assuming each meal is 15$) <br />
-            <input type="checkbox" id="checkbox15" name="dataplan" value="30"> I want a 2GB data plan <br />
-            <input type="checkbox" id="checkbox16" name="unlimiteddataplan" value="30"> I want an unlimited data plan
+            <input type="checkbox" id="checkbox15" name="dataplan" value="20"> I want a 2GB data plan <br />
+            <input type="checkbox" id="checkbox16" name="unlimiteddataplan" value="50"> I want an unlimited data plan
             <br />
 
             <button onclick="getValue()">Total cost</button>
@@ -50,7 +49,12 @@
             <script>
                 function getValue() {
                     var ele = []
-                    var cable = document.getElementById("checkbox1")
+                    var hidden = document.getElementById("checkbox1")
+                    if (hidden.checked) {
+                        ele.push(hidden.value);
+                    }
+            
+                    var cable = document.getElementById("checkbox17")
                     if (cable.checked) {
                         ele.push(cable.value);
                     }
